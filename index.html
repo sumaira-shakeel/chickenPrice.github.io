@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Get the quantity of chicken in grams from the user
+        //We use the prompt function to get the quantity of chicken in grams from the user.
+const quantityInGrams = parseInt(prompt("Enter the quantity of chicken in grams: "));
+
+// Calculate the quantity in kg
+//We calculate the total price by multiplying the quantity in kg with the price per kg (500).
+const quantityInKg = quantityInGrams / 1000;
+
+// Calculate the price
+const pricePerKg = 500;
+const totalPrice = quantityInKg * pricePerKg;
+
+// Display the result
+// We display the result using an alert box, showing the total price with two decimal places using the toFixed method.
+alert(`You have to pay RS${totalPrice.toFixed(2)} for ${quantityInGrams} grams of chicken.`);
+
+    </script>
+    
+</body>
+</html>
